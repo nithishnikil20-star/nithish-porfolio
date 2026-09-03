@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0b10" />
+      <stop offset="40%" stop-color="#12131a" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <linearGradient id="glowTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#4facfe" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="glowAmber" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f6d365" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#fda085" stop-opacity="0" />
+    </linearGradient>
+    <radialGradient id="lensGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2a3342" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="noiseFilter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.07 0" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1000" fill="url(#bgGrad)" />
+  <circle cx="200" cy="300" r="350" fill="url(#glowTeal)" />
+  <circle cx="650" cy="250" r="300" fill="url(#glowAmber)" />
+  <rect width="800" height="1000" fill="url(#lensGlow)" />
+  <rect width="800" height="1000" filter="url(#noiseFilter)" opacity="0.6"/>
+
+  <!-- Cinema HUD Lines -->
+  <rect x="40" y="40" width="720" height="920" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.5" stroke-dasharray="12 8" />
+  
+  <!-- Corner Crop Marks -->
+  <path d="M 60 90 L 60 60 L 90 60" fill="none" stroke="#e5a93b" stroke-width="2" />
+  <path d="M 740 90 L 740 60 L 710 60" fill="none" stroke="#e5a93b" stroke-width="2" />
+  <path d="M 60 910 L 60 940 L 90 940" fill="none" stroke="#e5a93b" stroke-width="2" />
+  <path d="M 740 910 L 740 940 L 710 940" fill="none" stroke="#e5a93b" stroke-width="2" />
+
+  <!-- Center Target -->
+  <circle cx="400" cy="420" r="45" fill="none" stroke="#ffffff" stroke-opacity="0.15" stroke-width="1.5" />
+  <line x1="400" y1="350" x2="400" y2="490" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1" stroke-dasharray="4 4" />
+  <line x1="330" y1="420" x2="470" y2="420" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1" stroke-dasharray="4 4" />
+
+  <!-- Stylized Filmmaker Silhouette with Headset/Camera -->
+  <g fill="#171922" stroke="#2a2d3d" stroke-width="2">
+    <!-- Body/Shoulders -->
+    <path d="M 230 780 C 230 650, 310 590, 400 590 C 490 590, 570 650, 570 780 L 590 1000 L 210 1000 Z" fill="#13151f" />
+    <!-- Neck -->
+    <path d="M 370 540 L 370 610 L 430 610 L 430 540 Z" fill="#181b26" />
+    <!-- Head -->
+    <ellipse cx="400" cy="420" rx="85" ry="115" fill="#1e2230" />
+    <!-- Headphones / Audio Gear -->
+    <path d="M 305 400 C 305 310, 495 310, 495 400" fill="none" stroke="#373d52" stroke-width="14" stroke-linecap="round" />
+    <rect x="295" y="385" width="22" height="70" rx="11" fill="#e5a93b" opacity="0.9" />
+    <rect x="483" y="385" width="22" height="70" rx="11" fill="#e5a93b" opacity="0.9" />
+  </g>
+
+  <!-- Cinema Camera Lens Reflection & Lighting Accent -->
+  <circle cx="400" cy="420" r="85" fill="none" stroke="#e5a93b" stroke-opacity="0.4" stroke-width="1" />
+
+  <!-- Camera HUD Telemetry -->
+  <g font-family="'Courier New', Courier, monospace" font-size="13" letter-spacing="2">
+    <!-- Top Left Status -->
+    <circle cx="70" cy="80" r="5" fill="#ff3344" />
+    <text x="85" y="84" fill="#ff3344" font-weight="bold">● REC</text>
+    <text x="170" y="84" fill="#8e95aa">00:04:18:22</text>
+    <text x="320" y="84" fill="#8e95aa">4K DCI · 24.00 FPS</text>
+    
+    <!-- Top Right Battery & ISO -->
+    <text x="610" y="84" fill="#8e95aa">ISO 800</text>
+    <text x="700" y="84" fill="#2bd980">RAW</text>
+
+    <!-- Bottom Left Metadata -->
+    <text x="70" y="910" fill="#8e95aa">SHUTTER 1/48</text>
+    <text x="70" y="930" fill="#e5a93b" font-weight="bold">ACEScc · LOG-C</text>
+    
+    <!-- Bottom Right Status -->
+    <text x="600" y="910" fill="#8e95aa">WB 5600K</text>
+    <text x="560" y="930" fill="#ffffff" opacity="0.8">AUDIO -12dB</text>
+  </g>
+
+  <!-- Watermark / Placeholder Label -->
+  <rect x="220" y="820" width="360" height="42" rx="4" fill="#000000" fill-opacity="0.7" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1" />
+  <text x="400" y="846" fill="#e5a93b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="3" text-anchor="middle">
+    PROFILE IMAGE PLACEHOLDER
+  </text>
+</svg>

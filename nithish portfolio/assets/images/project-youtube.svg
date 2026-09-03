@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="ytGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e0f17" />
+      <stop offset="60%" stop-color="#181b2a" />
+      <stop offset="100%" stop-color="#0a0b12" />
+    </linearGradient>
+    <linearGradient id="redAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff0033" />
+      <stop offset="100%" stop-color="#ff4466" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#ytGrad)" />
+  
+  <!-- Editing NLE Timeline Graphics Representation -->
+  <g opacity="0.35">
+    <!-- Tracks -->
+    <rect x="140" y="320" width="1000" height="40" rx="4" fill="#1b2238" />
+    <rect x="240" y="320" width="220" height="40" rx="4" fill="#2d3b66" />
+    <rect x="520" y="320" width="310" height="40" rx="4" fill="#3a4b82" />
+
+    <rect x="140" y="370" width="1000" height="40" rx="4" fill="#1b2238" />
+    <rect x="140" y="370" width="180" height="40" rx="4" fill="#ff0033" fill-opacity="0.6"/>
+    <rect x="360" y="370" width="260" height="40" rx="4" fill="#ff4466" fill-opacity="0.6"/>
+    <rect x="680" y="370" width="400" height="40" rx="4" fill="#ff0033" fill-opacity="0.6"/>
+
+    <rect x="140" y="420" width="1000" height="30" rx="4" fill="#151a2c" />
+    <rect x="180" y="420" width="140" height="30" rx="4" fill="#247854" fill-opacity="0.8"/>
+    <rect x="400" y="420" width="380" height="30" rx="4" fill="#247854" fill-opacity="0.8"/>
+
+    <!-- Playhead line -->
+    <line x1="580" y1="290" x2="580" y2="470" stroke="#00f2fe" stroke-width="3" />
+    <polygon points="570,290 590,290 580,305" fill="#00f2fe" />
+  </g>
+
+  <!-- Top Badges -->
+  <rect x="60" y="45" width="140" height="32" rx="16" fill="#ff0033" fill-opacity="0.2" stroke="#ff0033" stroke-width="1"/>
+  <text x="130" y="66" fill="#ff3344" font-family="'Courier New', monospace" font-size="13" font-weight="bold" text-anchor="middle">YOUTUBE ESSAY</text>
+  <text x="1220" y="66" fill="#8e95aa" font-family="'Courier New', monospace" font-size="14" text-anchor="end">18:42 · 4K 60FPS</text>
+
+  <!-- Center Big Typography -->
+  <text x="640" y="220" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="52" font-weight="900" letter-spacing="8" text-anchor="middle">THE ART OF PACING</text>
+  <text x="640" y="260" fill="#8e95aa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" letter-spacing="4" text-anchor="middle">HOW MASTER EDITORS CONTROL TENSION &amp; EMOTION</text>
+
+  <!-- YouTube Metrics Bar -->
+  <rect x="440" y="560" width="400" height="50" rx="25" fill="#141724" stroke="#252a3f" stroke-width="1"/>
+  <text x="540" y="591" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold">850K+ VIEWS</text>
+  <text x="740" y="591" fill="#2bd980" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold">98.4% RETENTION</text>
+</svg>
